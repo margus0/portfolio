@@ -23,7 +23,7 @@ const ContactForm = () => {
         }
       }
 
-      let response = await fetch(process.env.REACT_APP_URI, {
+      let response = await fetch(`${process.env.REACT_APP_URI}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',

@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
 import * as S from './Hero.styles';
-import resume from '../../assets/Marius_Gudinas_resume.PDF';
 
 const Hero = () => {
   return (
@@ -27,9 +26,6 @@ const Hero = () => {
               <i className='fa-solid fa-envelope'></i>
             </a>
           </li>
-          <a href={resume} download>
-            <Button>Download resume</Button>
-          </a>
         </ul>
       </div>
     </S.Hero>

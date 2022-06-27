@@ -23,7 +23,7 @@ const ProjectsList = () => {
       <h1>Projects</h1>
       <Projects
         title='E-commerce Website'
-        description='Simple responsive e-commerce shop with registration and login forms and protected routes built using ReactJs & NodeJs.'
+        description='Simple responsive e-commerce shop with registration, login forms and protected routes built using ReactJs & NodeJs.'
         image={images.homepage}
         link='https://plankton-app-uelyf.ondigitalocean.app'
         links={links[0]}

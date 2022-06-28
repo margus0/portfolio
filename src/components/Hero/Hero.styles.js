@@ -83,5 +83,11 @@ export const Hero = styled.section`
         padding: 0;
       }
     }
+
+    @media screen and (max-width: 325px) {
+      h1 {
+        font-size: 5vh;
+      }
+    }
   }
 `;

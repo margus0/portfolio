@@ -4,11 +4,11 @@ export const Form = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10vw 0;
-  font-size: 1.25vw;
+  margin: 5rem 0;
+  font-size: 1rem;
 
   h1 {
-    font-size: 3.5vw;
+    font-size: 4vw;
     margin: 0;
     text-align: center;
   }
@@ -37,20 +37,14 @@ export const Form = styled.section`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 2.5vw;
     h1 {
       font-size: 5vw;
     }
     form {
-      width: 80vw;
-    }
-    label,
-    button {
-      font-size: 2vw;
+      width: 70vw;
     }
 
     @media screen and (max-width: 426px) {
-      font-size: 2vh;
       h1 {
         font-size: 5vh;
       }

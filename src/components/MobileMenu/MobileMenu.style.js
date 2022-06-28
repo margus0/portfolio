@@ -15,17 +15,18 @@ export const Menu = styled.div`
   top: 0;
   bottom: 0;
   width: 100%;
-  display: ${(props) => (props.show === false ? 'flex' : 'none')};
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   .exit {
-    font-size: 3vw;
-    position: absolute;
-    top: 3vw;
-    left: 3vw;
-    color: #ffffff;
-
-    @media screen and (max-width: 426px) {
-      font-size: 3vh;
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      left: 1rem;
+      top: 1.5rem;
+      font-size: 1.5rem;
+      color: #ffffff;
     }
   }
 `;
@@ -59,7 +60,7 @@ export const Links = styled(Link)`
 
   :hover {
     color: #7deaf4;
-    font-size: 2.75vw;
+    font-size: 2.75vh;
     transition: ease 0.3s;
 
     :focus {

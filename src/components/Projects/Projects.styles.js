@@ -36,7 +36,7 @@ export const Projects = styled.div`
     }
 
     @media screen and (max-width: 426px) {
-      top: 25vw;
+      top: 15vh;
     }
   }
 

@@ -1,17 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as S from './MobileMenu.style';
 
-const MobileMenu = () => {
-  const [show, setShow] = useState(false);
-  const handleClick = () => {
-    show === false ? setShow(true) : setShow(false);
-  };
-
+const MobileMenu = ({ display }) => {
   return (
-    <S.Menu show={show}>
+    <S.Menu>
       <S.Navigation>
         <a href className='exit'>
-          <i onClick={handleClick} className='fa-solid fa-x'></i>
+          <i onClick={display} className='fa-solid fa-x'></i>
         </a>
         <S.Links to='/projects'>Projects</S.Links>
         <S.Links to='/about'>About</S.Links>

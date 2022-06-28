@@ -24,16 +24,16 @@ export const Menu = styled.menu`
   @media screen and (max-width: 768px) {
     border-right: none;
     #bars {
-      position: absolute;
-      top: 2vw;
-      right: 2vw;
-      font-size: 1.75rem;
       display: block;
-      @media screen and (max-width: 426px) {
-        top: 2vh;
-        left: 2vh;
-      }
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      font-size: 1.75rem;
     }
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 6vw;
   }
 `;
 

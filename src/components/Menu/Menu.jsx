@@ -1,19 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as Scroll from 'react-scroll';
-import MobileMenu from '../MobileMenu/MobileMenu';
 import * as S from './Menu.styles';
 
-const Menu = () => {
+const Menu = ({ handleClick }) => {
   let scroll = Scroll.animateScroll;
-  const [display, setDisplay] = useState(false);
-  const handleClick = () => {
-    display === false ? setDisplay(true) : setDisplay(false);
-  };
   return (
     <S.Menu className='main-menu'>
-      <i onClick={handleClick} id='bars' className='fa-solid fa-bars'></i>
-      {display && <MobileMenu />}
-      <S.Navigation display={display} className='main-navigation'>
+      <a href onClick={handleClick}>
+        <i id='bars' className='fa-solid fa-bars'></i>
+      </a>
+      <S.Navigation display={handleClick} className='main-navigation'>
         <S.Links
           to='home'
           spy={true}

@@ -11,7 +11,6 @@ export const About = styled.section`
   margin-bottom: 10vw;
 
   @media screen and (max-width: 768px) {
-    /* height: auto; */
     font-size: 3vw;
   }
 

@@ -8,14 +8,10 @@ export const Footer = styled.div`
   background-color: #2e2e2e;
   gap: 10rem;
   text-align: center;
-  font-size: 1.25vw;
+  font-size: 1rem;
 
   a {
     text-decoration: none;
     color: inherit;
-  }
-
-  @media screen and (max-width: 426px) {
-    font-size: 2vh;
   }
 `;

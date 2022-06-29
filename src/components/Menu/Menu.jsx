@@ -52,7 +52,6 @@ const Menu = ({ handleClick }) => {
           duration={500}
           delay={200}
           ignoreCancelEvents={true}
-          offset={-50}
           onClick={scroll.scrollTo('contact')}
         >
           Contact

@@ -14,24 +14,18 @@ const Home = () => {
     display !== false ? setDisplay(false) : setDisplay(true);
   };
   return (
-    <>
-      {display ? (
-        <MobileMenu display={handleClick} />
-      ) : (
-        <div id='home'>
-          <Menu handleClick={handleClick} />
-
-          <Hero />
-          <Banner deg='diagonal' />
-          <ProjectsList />
-          <Banner />
-          <About />
-          <Banner deg='diagonal' />
-          <ContactForm />
-          <Footer />
-        </div>
-      )}
-    </>
+    <div id='home'>
+      <Menu handleClick={handleClick} />
+      {display && <MobileMenu display={handleClick} />}
+      <Hero />
+      <Banner deg='diagonal' />
+      <ProjectsList />
+      <Banner />
+      <About />
+      <Banner deg='diagonal' />
+      <ContactForm />
+      <Footer />
+    </div>
   );
 };
 

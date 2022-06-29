@@ -8,7 +8,11 @@ export const Footer = styled.div`
   background-color: #2e2e2e;
   gap: 10rem;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1vw;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 0.75rem;
+  }
 
   a {
     text-decoration: none;

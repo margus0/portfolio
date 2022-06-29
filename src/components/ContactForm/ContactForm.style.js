@@ -5,7 +5,12 @@ export const Form = styled.section`
   justify-content: center;
   align-items: center;
   margin: 5rem 0;
-  font-size: 1rem;
+  font-size: 1.1vw;
+  height: 100vh;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 1rem;
+  }
 
   h1 {
     font-size: 4vw;

@@ -15,6 +15,7 @@ export const Menu = styled.div`
   top: 0;
   bottom: 0;
   width: 100%;
+  z-index: 20;
 
   @media screen and (min-width: 768px) {
     display: none;

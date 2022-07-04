@@ -5,7 +5,7 @@ import { ProjectList } from './ProjectsList.style';
 
 const links = [
   {
-    front: 'https://github.com/mariusGood/project-front-3',
+    front: 'https://github.com/mariusGood/project-front-2',
     back: 'https://github.com/mariusGood/project-back',
   },
   {

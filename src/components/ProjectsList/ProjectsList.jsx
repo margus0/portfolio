@@ -42,6 +42,7 @@ const ProjectsList = () => {
         title='Movie app'
         image={images.movie}
         description='Movie app created using OMDB API, ReactJs and Bootstrap'
+        link='https://oyster-app-rod2x.ondigitalocean.app/'
         links={links[2]}
       />
     </ProjectList>

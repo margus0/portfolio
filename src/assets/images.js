@@ -2,6 +2,7 @@ const images = {
   homepage: require('../assets/homepage.png'),
   todo: require('../assets/todo.png'),
   login: require('../assets/login.png'),
+  movie: require('../assets/movie.png'),
 };
 
 export const icons = [

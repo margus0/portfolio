@@ -18,9 +18,11 @@ const Projects = ({ title, description, image, link, links }) => {
         <a href={links.front} target={'_blank'} rel='noreferrer'>
           <Button>Front-End</Button>
         </a>
-        <a href={links.back} target={'_blank'} rel='noreferrer'>
-          <Button>Back-End</Button>
-        </a>
+        {links.back && (
+          <a href={links.back} target={'_blank'} rel='noreferrer'>
+            <Button>Back-End</Button>
+          </a>
+        )}
       </div>
     </S.Projects>
   );

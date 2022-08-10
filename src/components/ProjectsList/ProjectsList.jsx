@@ -12,6 +12,9 @@ const links = [
     front: 'https://github.com/margus0/todo-front',
     back: 'https://github.com/margus0/todo-back',
   },
+  {
+    front: 'https://github.com/mariusGood/movie-app',
+  },
 ];
 
 const ProjectsList = () => {
@@ -34,6 +37,12 @@ const ProjectsList = () => {
         image={images.todo}
         link='https://seal-app-zws4n.ondigitalocean.app'
         links={links[1]}
+      />
+      <Projects
+        title='Movie app'
+        image={images.movie}
+        description='Movie app created using OMDB API, ReactJs and Bootstrap'
+        links={links[2]}
       />
     </ProjectList>
   );

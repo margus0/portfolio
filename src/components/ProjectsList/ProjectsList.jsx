@@ -45,6 +45,10 @@ const ProjectsList = () => {
         link='https://oyster-app-rod2x.ondigitalocean.app/'
         links={links[2]}
       />
+      <Projects
+        title='YouTube Clone'
+        description='Comming soon...'
+      />
     </ProjectList>
   );
 };

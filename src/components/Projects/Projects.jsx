@@ -2,12 +2,19 @@ import React from 'react';
 import Button from '../Button/Button';
 import * as S from './Projects.styles';
 
-const Projects = ({ title, description, image, link, links }) => {
+const Projects = ({ title, description, image, link, links, hosted }) => {
+  console.log(image);
+
   return (
     <S.Projects>
       <div className='text'>
         <h2>{title}</h2>
         <p>{description}</p>
+        {hosted ? (
+          <b style={{ color: 'green' }}>HOSTED</b>
+        ) : (
+          <b style={{ color: 'red' }}>NOT HOSTED</b>
+        )}
       </div>
       <div>
         <a href={link} target={'_blank'} rel='noreferrer'>
@@ -29,3 +36,4 @@ const Projects = ({ title, description, image, link, links }) => {
 };
 
 export default Projects;
+
